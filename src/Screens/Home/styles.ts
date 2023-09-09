@@ -28,6 +28,12 @@ export const styles = StyleSheet.create({
         color: '#FFF',
         width: '80%',
         paddingLeft: 10,
+    },
+    noResult: {
+        color: '#FFF',
+        fontSize: 18,
+        textAlign: 'center',
+        marginVertical: 10,
     }
   });
   

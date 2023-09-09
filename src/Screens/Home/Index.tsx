@@ -44,8 +44,10 @@ export function Home(){
                 query,
             }
         });
-        if (response.data.length === 0){
-            setNoResult(true)
+        if (response.data.results.length === 0){
+            setNoResult(true);
+            setLoading(false);
+            setsearchResultMovies([]);
         } else{
             setsearchResultMovies(response.data.results)
         }
@@ -57,7 +59,9 @@ export function Home(){
         if (text.length > 1){
             searchMovies(text)
         }   else {
+            setNoResult(false);
             setsearchResultMovies([])
+            setLoading(false);
         }
     }
 
@@ -77,6 +81,13 @@ export function Home(){
                 />
                 <MagnifyingGlass color="#fff" size={25} weight="light"/>
             </View>
+
+                {noResult && (
+                    <Text style={styles.noResult}>
+                        Nenhum filme encontrado para "{search}"
+                    </Text>
+                )}
+
             </View>
             <View>
                 <FlatList
