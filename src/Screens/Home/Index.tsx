@@ -75,7 +75,7 @@ export function Home(){
     )
 
 
-    const movieData = search.length > 1 ? searchResultMovies : discoveryMovies
+    const movieData = search.length > 2 ? searchResultMovies : discoveryMovies
 
     return(
         <View style={styles.container}>
@@ -106,8 +106,7 @@ export function Home(){
                     renderItem={renderMovieItem}
                     showsVerticalScrollIndicator={false}
                     contentContainerStyle={{
-                        padding: 35, 
-                        paddingBottom: 100 
+                        padding: 25
                     }}
                     onEndReached={() => loadMoreData()}
                     onEndReachedThreshold={0.2}
