@@ -1,3 +1,3 @@
-# movies
+# Movies
 
 ## Projeto ainda em andamento 🛠️
