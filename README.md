@@ -5,6 +5,10 @@
 
 ### Projeto para envolver um app para criação de uma lista de filmes favoritos.
 
+## Sobre:
++ O projeto utiliza do Async Storage para o armazenamento dos dados.
++ Utilização da api da The Movie Database (TMDB) para as informações dos filmes.
+
 ## Dependências 📌: 
 
 + O comando "npm install" já ira colocar todas as dependências. 
