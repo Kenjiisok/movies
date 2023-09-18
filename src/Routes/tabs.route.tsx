@@ -1,10 +1,10 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
 import { Home } from "../Screens/Home/Index"
-import { styles } from '../Screens/Home/styles';
-import { BookBookmark, BookmarksSimple, House, MagnifyingGlass } from "phosphor-react-native";
+import { BookmarksSimple, Gear, House, MagnifyingGlass } from "phosphor-react-native";
 import { Details } from "../Screens/Details/Index";
 import { Search } from "../Screens/Search/Index";
 import { MyList } from "../Screens/MyList/Index";
+import {Settings} from "../Screens/Settings/index";
 
 const {Navigator,Screen} = createBottomTabNavigator()
 
@@ -60,6 +60,15 @@ export function TabRoutes(){
                 {{tabBarButton: () => null
                 }}
             />   
+
+            <Screen 
+                name="Settings" 
+                component={Settings} 
+                options=
+                {{tabBarIcon: ({color}) => ( 
+                    <Gear color={color} size={30} weight="light"/>
+            )}}
+            />
         </Navigator>
     )
 }

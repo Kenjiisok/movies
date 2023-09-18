@@ -110,7 +110,7 @@ export function Home(){
                         paddingBottom: 100 
                     }}
                     onEndReached={() => loadMoreData()}
-                    onEndReachedThreshold={0.3}
+                    onEndReachedThreshold={0.2}
                 />
                 {loadding && <ActivityIndicator size={50} color='#0296e5'/>}
             </View>
