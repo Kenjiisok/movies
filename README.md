@@ -1,4 +1,4 @@
-<h1>Fav Movies</h1>
+<h1>Fav Movies ⭐</h1>
 
 > Status: Ongoing 🛠️
 
